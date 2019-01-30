@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic");
+:root {
+    --r6-blue: #006ecc;
+    --r6-orange: #dd7624;
+}
+body, html {
+    width: 1920px;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+body {
+    background-color: transparent;
+}
+p, h1, h2, h3 {
+    margin: 0;
+}

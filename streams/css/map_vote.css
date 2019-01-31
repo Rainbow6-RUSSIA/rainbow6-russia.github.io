@@ -1,193 +1,166 @@
-
-      .gwd-page-container {
-        position: relative;
-        width: 100%;
-        height: 100%;
-      }
-      .gwd-page-content {
-        background-color: transparent;
-        position: absolute;
-      }
-      .gwd-page-wrapper {
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        transform: translateZ(0px);
-      }
-      .gwd-page-size {
-        width: 100%;
-        height: 100%;
-      }
-      .team-block {
-        position: absolute;
-        background-color: transparent;
-        width: 500px;
-        top: 75px;
-        background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0) 1%, rgb(66, 66, 66) 98%);
-        height: 900px;
-      }
-      .team-block-right {
-        left: 1320px;
-      }
-      .team-block-left {
-        left: 100px;
-      }
-      .footer-image {
-        position: absolute;
-        width: 180px;
-        height: 102px;
-        transform-origin: 106px 60px 0px;
-        top: 928px;
-      }
-      .footer-text {
-        position: absolute;
-        font-family: "Roboto Condensed";
-        color: white;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 45px;
-        width: 180px;
-        height: 45px;
-        font-size: 20px;
-        top: 1030px;
-      }
-      .footer-div {
-        position: absolute;
-        width: 1920px;
-        left: 0px;
-        background-image: none;
-        background-color: rgba(66, 66, 66, 0.9);
-        height: 182px;
-        top: 898px;
-      }
-      .footer-bank {
-        left: 82.5px;
-      }
-      .footer-border {
-        left: 345px;
-      }
-      .footer-clubhouse {
-        left: 607.5px;
-      }
-      .footer-coastline {
-        left: 870px;
-      }
-      .footer-consulate {
-        left: 1132.5px;
-      }
-      .footer-oregon {
-        left: 1395px;
-      }
-      .footer-villa {
-        left: 1657.5px;
-      }
-      .background-logo {
-        position: absolute;
-        width: 1920px;
-        height: 1080px;
-        left: 0px;
-        top: 0px;
-      }
-      .team-title-block {
-        position: absolute;
-        background-image: none;
-        background-color: rgb(33, 33, 33);
-        width: 460px;
-        height: 110px;
-        left: 20px;
-        top: 20px;
-      }
-      .team-logo {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        top: 5px;
-        left: 5px;
-      }
-      .team-title-text {
-        position: absolute;
-        font-family: "Roboto Condensed";
-        color: rgb(255, 255, 255);
-        left: 110px;
-        height: 100px;
-        top: 5px;
-        width: 345px;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 100px;
-        font-size: 20px;
-      }
-      .team-action1 {
-        top: 140px;
-      }
-      .team-action2 {
-        top: 292px;
-      }
-      .team-action3 {
-        top: 444px;
-      }
-      .team-action4 {
-        top: 596px;
-      }
-      .team-action5 {
-        top: 748px; 
-      }
-      .team-action-block {
-        position: absolute;
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right center;
-        height: 142px;
-        left: 30px;
-        width: 440px;
-      }
-      .team-action-red {
-        background-color: rgb(229, 57, 53);
-      }
-      .team-action-green {
-        background-color: rgb(67, 160, 71);
-      }
-      .decider {
-        position: absolute;
-        top: 712px;
-        background-color: rgb(67, 160, 71);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: right center;
-        height: 142px;
-        width: 440px;
-        left: 740px;
-      }
-      .glyph-placeholder {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        left: 45px;
-        top: 20px;
-      }
-      .team-action-text {
-        position: absolute;
-        left: 188px;
-        width: 252px;
-        font-family: "Roboto Condensed";
-        font-size: 28px;
-        color: rgb(255, 255, 255);
-        height: 30px;
-        top: 56px;
-        vertical-align: middle;
-        text-align: center;
-        line-height: 30px;
-        background-image: none;
-        background-color: rgb(97, 97, 97);
-      }
-      .footer-overlay {
-        background-color: rgba(97, 97, 97, 0.5);
-      }
-      .footer-overlay-logo {
-        position: absolute;
-        margin: auto;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        bottom: 0px;
-        zoom: 0.8;
-      }
+body {
+  height: 1080px;
+}
+.logs {
+  display: flex;
+  height: 83.8%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.log {
+  max-height: 780px;
+  background-color: transparent;
+  width: 500px;
+  background-image: -webkit-linear-gradient(90deg, rgba(255, 255, 255, 0), rgb(66, 66, 66));
+  padding-top: 20px;
+  /* border: 2px solid red; */
+}
+[id|="-1"].log {
+  align-self: flex-end;
+  background-image: -webkit-linear-gradient(-90deg, rgba(255, 255, 255, 0), rgba(66, 66, 66, 0.8));
+}
+.log-team {
+  position: relative;
+  background-color: rgb(33, 33, 33);
+  width: 460px;
+  height: 110px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.log-maps {
+  /* display: flex;
+  flex-direction: column; */
+  /* position: relative;
+  width: 100%;
+  height: 100%; */
+}
+.log-action {
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 142px;
+  width: 440px;
+  margin: 20px auto;
+}
+.team-logo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 5px;
+}
+.log-action-red {
+  background-color: rgb(229, 57, 53);
+}
+.log-action-green {
+  background-color: rgb(67, 160, 71);
+}
+.team-title-text {
+  font-family: "Roboto Condensed";
+  color: rgb(255, 255, 255);
+  left: 110px;
+  height: 100px;
+  top: 5px;
+  width: 345px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  font-size: 20px;
+  margin: 5px;
+}
+.team-action-block {
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 142px;
+  left: 30px;
+  width: 440px;
+}
+/* .background-logo {
+  position: absolute;
+  width: 1920px;
+  height: 1080px;
+  left: 0px;
+  top: 0px;
+} */
+.decider {
+  position: relative;
+  background-color: rgb(67, 160, 71);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 142px;
+  width: 440px;
+  margin: 20px auto;
+}
+.glyph-placeholder {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  left: 45px;
+  top: 20px;
+}
+.team-action-text {
+  position: absolute;
+  left: 188px;
+  width: 252px;
+  font-family: "Roboto Condensed";
+  font-size: 28px;
+  color: rgb(255, 255, 255);
+  height: 30px;
+  top: 56px;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 30px;
+  background-image: none;
+  background-color: rgb(97, 97, 97);
+}
+footer {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  bottom: 0px;
+  height: 175px;
+  background-color: rgba(66, 66, 66, 0.8);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-items: stretch;
+}
+.footer-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.footer-map {
+  position: relative;
+}
+footer > div > div > img {
+  width: 180px;
+  height: 102px;
+  /* transform-origin: 106px 60px 0px; */
+}
+.footer-overlay {
+  top: 0;
+  position: absolute;
+  width: 180px;
+  height: 102px;
+  background-color: rgba(0, 0, 0, 0.3)
+}
+.footer-text {
+  /* position: absolute; */
+  font-family: "Roboto Condensed";
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 45px;
+  width: 180px;
+  height: 45px;
+  font-size: 20px;
+  top: 1030px;
+}

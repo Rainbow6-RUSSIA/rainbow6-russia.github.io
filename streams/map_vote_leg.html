@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Map Vote</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/map_vote.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script defer src="./js/socket.io.js"></script>
+    <script defer src="./js/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/textfill.js"></script>
+</head>
+<body style="opacity: 0;">
+    <div class="team-block team-block-left">
+        <div class="team-title-block">
+          <img src="./img/XXX.png" id="0" class="team-logo">
+          <p class="team-title-text" id="0">TEAM A</p>
+        </div>
+        <div id="0" style="display: none;" class="team-action1 team-action-block">
+          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
+          </div>
+          <p class="team-action-text"></p>
+        </div>
+        <div id="1" style="display: none;" class="team-action2 team-action-block">
+          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
+          </div>
+          <p class="team-action-text"></p>
+        </div>
+      </div>
+
+      <div style="display: none;" id="[0-9]0" class="decider">
+        <div class="glyph-placeholder">
+          <img source="./img/icons/hand-shake.svg" id="img-decider">
+        </div>
+        <p class="team-action-text"></p>
+      </div>
+
+      <div class="team-block team-block-right">
+        <div class="team-title-block">
+          <img src="./img/XXX.png" id="1" class="team-logo">
+          <p class="team-title-text" id="1">TEAM B</p>
+        </div>
+        <div style="display: none;" id="0" class="team-action1 team-action-block">
+          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
+          </div>
+          <p class="team-action-text"></p>
+        </div>
+        <div style="display: none;" id="1" class="team-action2 team-action-block">
+          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
+          </div>
+          <p class="team-action-text"></p>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footer-item">
+          <div class="footer-map">
+              <img src="">
+              <div style="display: none;" class="footer-overlay"></div>
+          </div>
+          <div class="footer-text"></div>
+        </div>
+      </footer>
+    <script defer src="./js/map_vote.js"></script>
+</body>
+</html>

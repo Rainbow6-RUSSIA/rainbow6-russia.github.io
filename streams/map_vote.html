@@ -4,64 +4,71 @@
     <meta charset="utf-8">
     <title>Map Vote</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/map_vote.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css?id=1231">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/map_vote.css?id=1231">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script defer src="./js/socket.io.js"></script>
     <script defer src="./js/jquery-3.3.1.min.js"></script>
     <script defer src="./js/textfill.js"></script>
 </head>
 <body style="opacity: 0;">
-    <div class="team-block team-block-left">
-        <div class="team-title-block">
+    <div class="logs">
+      <div class="log" id="0">
+        <div class="log-team">
           <img src="./img/XXX.png" id="0" class="team-logo">
-          <p class="team-title-text" id="0">TEAM A</p>
+          <p class="team-title-text" id="0"></p>
         </div>
-        <div id="0" style="display: none;" class="team-action1 team-action-block">
-          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
+        <div id="0" style="opacity: 0;" class="log-maps">
+          <div class="log-action">
+            <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;">clear</i>
+            </div>
+            <p class="team-action-text"></p>
           </div>
-          <p class="team-action-text"></p>
-        </div>
-        <div id="1" style="display: none;" class="team-action2 team-action-block">
-          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
-          </div>
-          <p class="team-action-text"></p>
         </div>
       </div>
 
-      <div style="display: none;" id="[0-9]0" class="decider">
-        <div class="glyph-placeholder">
-          <img source="./img/icons/hand-shake.svg" id="img-decider">
-        </div>
-        <p class="team-action-text"></p>
+      <div style="opacity: 0;" class="log" id="-1">
+          <div class="log-team">
+              <img src="./img/XXX.png" id="0" class="team-logo">
+              <p class="team-title-text">решающая карта</p>
+              <img src="./img/XXX.png" id="1" class="team-logo">
+          </div>
+          <div class="log-maps">
+            <div class="decider">
+              <div class="glyph-placeholder">
+                <img source="img/icons/hand-shake.svg" id="img-decider" src="./img/icons/hand-shake.svg" style="background-position: center center;">
+              </div>
+              <p class="team-action-text"></p>
+            </div>
+          </div>
       </div>
 
-      <div class="team-block team-block-right">
-        <div class="team-title-block">
+      <div class="log" id="1">
+        <div class="log-team">
           <img src="./img/XXX.png" id="1" class="team-logo">
-          <p class="team-title-text" id="1">TEAM B</p>
+          <p class="team-title-text" id="1"></p>
         </div>
-        <div style="display: none;" id="0" class="team-action1 team-action-block">
-          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
+        <div id="1" style="opacity: 0;" class="log-maps">
+          <div class="log-action">
+            <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;">clear</i>
+            </div>
+            <p class="team-action-text"></p>
           </div>
-          <p class="team-action-text"></p>
-        </div>
-        <div style="display: none;" id="1" class="team-action2 team-action-block">
-          <div class="glyph-placeholder"><i class="material-icons" style="font-size: 100px;"></i>
-          </div>
-          <p class="team-action-text"></p>
         </div>
       </div>
+    </div>
 
-      <footer>
-        <div class="footer-item">
-          <div class="footer-map">
-              <img src="">
-              <div style="display: none;" class="footer-overlay"></div>
-          </div>
-          <div class="footer-text"></div>
+    <footer style="opacity: 0;">
+      <div class="footer-item">
+        <div class="footer-map">
+            <img src="">
+            <div style="opacity: 0;" class="footer-overlay"></div>
         </div>
-      </footer>
-    <script defer src="./js/map_vote.js"></script>
+        <div class="footer-text"></div>
+      </div>
+    </footer>
+  </div>
+  <script defer src="./js/map_vote.js?id=1231"></script>
 </body>
 </html>

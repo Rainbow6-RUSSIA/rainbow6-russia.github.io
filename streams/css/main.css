@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'BebasNeueLight';
-        src: url('https://github.com/Rainbow6-RUSSIA/rainbow6-russia.github.io/blob/master/streams/fonts/bebas/BebasNeue%20Light.otf?raw=true') format('opentype');
+        src: url('https://cdn.rainbow6russia.ru/streams/fonts/bebas/BebasNeue%20Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'BebasNeueRegular';
-        src: url('https://github.com/Rainbow6-RUSSIA/rainbow6-russia.github.io/blob/master/streams/fonts/bebas/BebasNeue%20Regular.otf?raw=true') format('opentype');
+        src: url('https://cdn.rainbow6russia.ru/streams/fonts/bebas/BebasNeue%20Regular.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }

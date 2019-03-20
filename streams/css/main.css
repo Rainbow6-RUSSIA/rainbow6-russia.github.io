@@ -1,9 +1,15 @@
-/* @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic"); */
 @font-face {
-    font-family: 'Bebas Neue';
+    font-family: 'BebasNeueLight';
+        src: url('/assets/fonts/bebas/b98870e552991cf3daa1031f9fb5ec74/4c8d42e69711e4e230d9081694db00ce/BebasNeueLight.otf') format('opentype');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: local('Bebas Neue Regular'), url('../fonts/bebas/BebasNeue\ Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'BebasNeueRegular';
+        src: url('/assets/fonts/bebas/b98870e552991cf3daa1031f9fb5ec74/51b4a619fab5e1a38643657191a85aa5/BebasNeueRegular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
 }
 :root {
     --r6-blue: #006ecc;
@@ -12,7 +18,9 @@
 body, html {
     width: 1920px;
     margin: 0;
-    font-family: 'Bebas Neue', sans-serif;
+    font-family: 'BebasNeueRegular' !important;
+    font-weight: normal;
+    font-style: normal;
 }
 body {
     background-color: transparent;

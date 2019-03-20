@@ -1,0 +1,84 @@
+body {
+    height: 120px;
+}
+
+.bg-test {
+    height: 1080px;
+    width: 1920px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.bar {
+    width: 1922px;
+    top: 3px;
+    position: absolute;
+    height: 60px;
+    /* left: 1px;  */
+    /* wtf */
+}
+
+.bar:first-of-type {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.4) 0%, rgb(0, 0, 0) 50%, rgba(0, 0, 0, 0.4) 100%);
+}
+
+.container {
+    float: left;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(0, 0, 255, 0.5);
+    position: relative;
+}
+
+.container:first {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.team-score {
+    width: 54px;
+    height: 100%;
+    margin: auto;
+    --score-margin: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.score-bar {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 70%;
+    height: 15px;
+    margin: 0px auto;
+}
+
+.score-bar:active {
+    background-color: #ffcf05;
+}
+
+[id="0"].container > .team-score {
+    transform: skew(20deg);
+    margin-right: var(--score-margin);
+    background-color: var(--r6-blue);
+}
+
+[id="1"].container > .team-score {
+    transform: skew(-20deg);
+    margin-left: var(--score-margin);
+    background-color: var(--r6-orange);
+}
+
+[id="0"].container > .team-logo {}
+
+[id="1"].container > .team-logo {}
+
+.logo {
+    clear: both;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 72px;
+    height: 72px;
+    margin: 0px auto;
+    background-image: url("../img/r6-inv.png");
+}

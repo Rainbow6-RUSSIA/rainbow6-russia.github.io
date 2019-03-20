@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic");
+/* @import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&subset=cyrillic"); */
+@font-face {
+    font-family: 'Bebas Neue';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Bebas Neue Regular'), url('../fonts/bebas/BebasNeue\ Regular.otf') format('opentype');
+}
 :root {
     --r6-blue: #006ecc;
     --r6-orange: #dd7624;
@@ -6,7 +12,7 @@
 body, html {
     width: 1920px;
     margin: 0;
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Bebas Neue', sans-serif;
 }
 body {
     background-color: transparent;

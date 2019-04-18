@@ -1,4 +1,5 @@
-socket = io.connect('https://streams.rainbow6russia.ru');
+// socket = io.connect('https://streams.rainbow6russia.ru');
+socket = io.connect('http://127.0.0.1:3001');
 
 function syncData(data) {
     let length = data.pool.length + data.votes.length;
